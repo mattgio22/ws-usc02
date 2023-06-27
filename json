@@ -1,0 +1,67 @@
+{
+  "schema": "devcap1.schema.json",
+  "manufacturername": "$MF_LUMI",
+  "modelid": "lumi.switch.b2laus01",
+  "vendor": "BackyardSwitch1",
+  "product": "lumi.switch.b2laus01",
+  "sleeper": false,
+  "status": "Gold",
+  "path": "/devices/lumi.switch.b2laus01.json",
+  "subdevices": [
+    {
+      "type": "$TYPE_ON_OFF_LIGHT",
+      "restapi": "/lights",
+      "uuid": [
+        "$address.ext",
+        "0x01"
+      ],
+      "items": [
+        {
+          "name": "attr/id"
+        },
+        {
+          "name": "attr/lastannounced"
+        },
+        {
+          "name": "attr/lastseen"
+        },
+        {
+          "name": "attr/manufacturername"
+        },
+        {
+          "name": "attr/modelid"
+        },
+        {
+          "name": "attr/name"
+        },
+        {
+          "name": "attr/swversion"
+        },
+        {
+          "name": "attr/type"
+        },
+        {
+          "name": "attr/uniqueid"
+        },
+        {
+          "name": "config/on/startup",
+          "description": "On/Off state on device startup (power on).",
+          "refresh.interval": 3600,
+          "default": 255
+        },
+        {
+          "name": "state/alert",
+          "description": "The currently active alert effect.",
+          "default": "none"
+        },
+        {
+          "name": "state/on",
+          "refresh.interval": 5
+        },
+        {
+          "name": "state/reachable"
+        }
+      ]
+    }
+  ]
+}
